@@ -1,5 +1,6 @@
 import React from "react";
 import { TextInput, Text, View, Button } from "react-native"
+import ResultImc from "../ResultImc";
 
 const Form = () => {
     return (
@@ -22,7 +23,7 @@ const Form = () => {
 
             </View>
 
-            {/* <ResultImc /> */}
+            <ResultImc />
 
         </View>
     )
