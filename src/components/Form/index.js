@@ -34,17 +34,24 @@ const Form = () => {
 
                 <Text>Altura</Text>
                 <TextInput
+                    onChangeText={setHeight}
+                    valu={height}
                     placeholder="Ex.: 1.75"
                     keyboardType="numeric"
                 />
 
                 <Text>Peso</Text>
                 <TextInput
+                    value={weight}
+                    onChangeText={setWeight}
                     placeholder="Ex.: 75.256"
                     keyboardType="numeric"
                 />
 
-                <Button title="Calcular IMC" />
+                <Button
+                    onPress={() => validationImc()}
+                    title={textButton}
+                />
 
             </View>
 
