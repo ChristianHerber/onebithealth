@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { TextInput, Text, View, TouchableOpacity, Vibration } from "react-native"
+import { TextInput, Text, View, TouchableOpacity, Vibration, Pressable, Keyboard } from "react-native"
 import ResultImc from "../ResultImc";
 import styles from "./style"
 
@@ -40,7 +40,7 @@ const Form = () => {
     }
 
     return (
-        <View style={styles.formContext}>
+        <Pressable onPress={Keyboard.dismiss} style={styles.formContext}>
             <View style={styles.form}>
 
                 <Text style={styles.formLabel}>Altura</Text>
@@ -74,7 +74,7 @@ const Form = () => {
 
             <ResultImc messageResultImc={messageImc} resultImc={imc} />
 
-        </View>
+        </Pressable>
     )
 }
 

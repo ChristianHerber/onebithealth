@@ -1,6 +1,7 @@
 import React from "react";
 import { View, Text, TouchableOpacity, Share } from "react-native"
 import styles from "./style";
+import { FontAwesome } from "@expo/vector-icons"
 
 const ResultImc = (props) => {
 
@@ -20,7 +21,9 @@ const ResultImc = (props) => {
                 <TouchableOpacity
                     onPress={onShare}
                     style={styles.sharedButton}>
-                    <Text style={styles.sharedText}>Share</Text>
+                    <Text style={styles.sharedText}>
+                        <FontAwesome name="share-alt" size={14} color="white" /> Share
+                    </Text>
                 </TouchableOpacity>
             : <Text></Text>}
             </View>
