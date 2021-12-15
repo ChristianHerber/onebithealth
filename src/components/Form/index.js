@@ -13,7 +13,9 @@ const Form = () => {
     const[errorMessage, setErrorMessage] = useState(null)
 
     function imcCalculator(){
-        return setImc((weight/(height*height)).toFixed(2))
+        let heightFormated = height.replace(",", ".")
+        let weitghtFormated = weight.replace(",", ".")
+        return setImc((weitghtFormated/(heightFormated*heightFormated)).toFixed(2))
     }
 
     function verificationImc(){
