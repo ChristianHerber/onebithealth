@@ -5,7 +5,7 @@ import styles from "./style"
 const Title = () => {
     return (
         <View style={styles.boxTitle}>
-            <Text style={styles.textTitle}>OneBitHealth</Text>
+            <Text style={styles.textTitle}>IMC Calculator</Text>
         </View>
     )
 }

@@ -2,9 +2,7 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
     formContext: {
-        width: "100%",
-        height: "100%",
-        justifyContent: "space-around",
+        flex: 1,
         bottom: 0,
         backgroundColor: "#ffffff",
         alignItems: "center",
@@ -52,6 +50,25 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
         paddingLeft: 20,
         marginTop: -12,
+    },
+    exhibitionResultImc: {
+        width: "100%",
+        height: "50%",
+    },
+    listImcs: {
+        marginTop: 15,
+        paddingHorizontal: 15,
+    },
+    resultImcItem: {
+        fontSize: 24,
+        color: "#ff0043",
+        height: 40,
+        width: "100%",
+        paddingRight: 20,
+    },
+    textResultItemList: {
+        fontSize: 16,
+        color: "#333"
     }
 })
 
